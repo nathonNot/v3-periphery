@@ -81,6 +81,8 @@ export default {
     bitlayer_testnet: {
       url: "https://testnet-rpc.bitlayer.org" || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      gas: 3000000,
+      gasPrice: 1000000000
     },
     bitlayer: {
       url: "https://rpc.bitlayer.org" || "",
