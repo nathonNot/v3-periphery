@@ -78,6 +78,14 @@ export default {
     optimism: {
       url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
+    bitlayer_testnet: {
+      url: "https://testnet-rpc.bitlayer.org" || "",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    bitlayer: {
+      url: "https://rpc.bitlayer.org" || "",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    }
   },
   etherscan: {
     // Your API key for Etherscan
